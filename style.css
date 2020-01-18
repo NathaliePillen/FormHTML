@@ -1,0 +1,140 @@
+body{
+    background: #658270;
+    margin: 0;
+    font-family: arial;
+}
+
+header{
+    background: #548270;
+    padding: 20px;
+    text-align: center;
+}
+
+form{
+    margin: 20px;
+    color: #eee;
+}
+
+form p{
+    font-size: 18 px;
+    letter-spacing: 0.1em;
+}
+
+/* Radiobuttons - Checkbox*/
+
+input[type="radio"], input[type="checkbox"]{
+    cursor: pointer;
+}
+
+label[for="female"], label[for="male"], label[for="cats"], label[for="travel"], label[for="music"]{
+    margin-bottom: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+input:checked + label[for="female"],
+input:checked + label[for="male"],
+input:checked + label[for="cats"],
+input:checked + label[for="music"],
+input:checked + label[for="travel"]{
+    color: #e0b700;
+}
+
+/* email - telephone */
+fieldset{
+    padding: 20px;
+    margin: 20px 0px;
+    border: 3px solid #e0b700;
+}
+
+legend{
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 0.1 em;
+    color: #e0b700;
+}
+
+input[type="email"],
+input[type="telephone"]{
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 10px 10px 50px;
+    border: 0;
+    border-radius: 4px;
+    background: url(img/inputs.png) no-repeat;
+    background-color: #222;
+    font-size: 16px;
+    color: #fff;
+    float: left;
+    clear: both;
+}
+
+input[type="email"]{
+    background-position: 7px 8px;
+}
+
+input[type="telephone"]{
+    background-position: 7px -58px;
+}
+
+/* submit */
+
+.contacted{
+    margin:30px 0px -15px 0px;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+
+    display: block;
+    margin: 30px 0;
+    padding: 10px 50px 10px 10px;
+    background: url(img/select.png) no-repeat 95% center;
+    background-color: #222;
+    color: #fff;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    width: 280px;
+}
+
+input[type="submit"]{
+    background: #e0b700;
+    padding: 10px;
+    color: #222;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    box-shadow: 1px 5px 8px rgba(0,0,0,5);
+    width: 280px;
+}
+
+/*validation style*/
+
+input[type="email"]:valid,
+input[type="telephone"]:valid{
+    border: 2px solid #fff;
+}
+
+input[type="email"]:valid{
+    background-position: 7px -22px;
+}
+
+input[type="telephone"]:valid{
+    background-position: 7px -97px;
+}
+
+input[type="email"]:valid + .tick,
+input[type="telephone"]:valid + .tick{
+    background: url(img/tick.png) center;
+    background-size: 100%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 10px;
+}
